@@ -28,10 +28,10 @@ function addNumbers(firstNumber, secondNumber) {
 console.log('Test - should return the sum of two numbers:', addNumbers());
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(num1, num2, num3) {
+  return num1 * num2 * num3;
 }
-
+console.log('Test - should return the product of three numbers:', multiplyThree());
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
