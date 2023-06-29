@@ -62,10 +62,17 @@ console.log('getLast - should return last item in array:', getLast([]));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-  for(let i=0; i<array.length; i++){
-
+  for(value in array){
+    if(value === array){
+      return true; 
+    } else {
+      return false;
+    }
 }}
-console.log('find - should return true:', find());
+console.log('find - should say true:', find(3, [2, 3, 4]));
+console.log('find - should say false:', find(5, [2, 3, 4]));
+console.log('find - should say false:', find());
+
 
 // ----------------------
 // Stretch Goals
